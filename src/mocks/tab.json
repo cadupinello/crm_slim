@@ -1,0 +1,32 @@
+[
+  {
+    "id": "0ab3a1f4a8",
+    "name": "Ticket duplicado",
+    "description": "",
+    "superior_id": "00000000-0000-0000-0000-000000000000",
+    "active": true,
+    "category": true,
+    "guideline_category": [
+      3
+    ],
+    "color": "#e83b3b",
+    "created_at": "2025-01-21T12:47:32.66479Z",
+    "updated_at": "2025-11-04T12:41:11.797928Z",
+    "child": [],
+    "tab": [
+      {
+        "id": "0c904",
+        "group_ID": "0ab3a1f4",
+        "feeling_id": "c4bcb",
+        "name": "asdfasdfg",
+        "description": "",
+        "active": true,
+        "color": "",
+        "created_at": "2025-01-21T12:47:32.783302Z",
+        "update_at": "2025-11-04T12:41:11.963656Z",
+        "tipo": "tab"
+      }
+    ],
+    "department": []
+  }
+]

@@ -5,7 +5,9 @@ import ReactDOM from "react-dom/client";
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
 
+import { QueryClientProvider } from "@tanstack/react-query";
 import ThemeWrapper from "./hooks/ThemeWrapper.tsx";
+import { queryClient } from "./queryClient.ts";
 import reportWebVitals from "./reportWebVitals.ts";
 
 // Create a new router instance
@@ -31,9 +33,11 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
+      <QueryClientProvider client={queryClient}>
       <ThemeWrapper>
         <RouterProvider router={router} />
       </ThemeWrapper>
+      </QueryClientProvider>
     </StrictMode>
   );
 }
